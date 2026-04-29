@@ -1,0 +1,124 @@
+/* src/pages/UserSelectPage.css */
+
+.user-select-loading {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-select-page {
+  min-height: 100vh;
+  background: var(--gray-50);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.user-select-inner {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Brand */
+.usp-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+.usp-mark {
+  width: 42px; height: 42px;
+  background: var(--brand);
+  color: var(--accent);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 800;
+}
+.usp-name { font-size: 16px; font-weight: 700; color: var(--gray-900); }
+.usp-sub  { font-size: 12px; color: var(--gray-400); }
+
+/* Heading */
+.usp-heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 8px;
+}
+.usp-hint {
+  font-size: 14px;
+  color: var(--gray-500);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.usp-search { margin-bottom: 32px; }
+
+/* Teams */
+.usp-teams { display: flex; flex-direction: column; gap: 28px; }
+
+.usp-team-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 10px;
+}
+
+.usp-members { display: flex; flex-direction: column; gap: 8px; }
+
+.usp-member {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--r);
+  cursor: pointer;
+  transition: all 0.15s;
+  text-align: left;
+  box-shadow: var(--shadow-sm);
+}
+.usp-member:hover {
+  border-color: var(--brand2);
+  box-shadow: 0 0 0 3px rgba(14,107,168,0.08);
+  transform: translateX(3px);
+}
+
+.usp-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--brand-light);
+  color: var(--brand2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; flex-shrink: 0;
+}
+
+.usp-member-info { flex: 1; min-width: 0; }
+.usp-member-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+.usp-member-role {
+  font-size: 12px;
+  color: var(--gray-500);
+  margin-top: 2px;
+}
+
+.usp-arrow {
+  font-size: 16px;
+  color: var(--gray-300);
+  transition: color 0.15s;
+}
+.usp-member:hover .usp-arrow { color: var(--brand2); }
+
+.usp-empty {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--gray-600);
+  font-size: 14px;
+}

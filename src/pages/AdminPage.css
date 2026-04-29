@@ -1,0 +1,10 @@
+/* src/pages/AdminPage.css */
+.team-sections { display: flex; flex-direction: column; gap: 16px; }
+.team-section { overflow: hidden; }
+.team-section-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; border-bottom: 1px solid var(--gray-100); }
+.team-section-title { font-size: 14px; font-weight: 600; color: var(--gray-900); }
+.users-table-wrap { overflow-x: auto; }
+.users-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.users-table th { text-align: left; padding: 9px 20px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--gray-400); background: var(--gray-50); }
+.users-table td { padding: 12px 20px; border-top: 1px solid var(--gray-100); color: var(--gray-700); }
+.users-table tr:hover td { background: var(--gray-50); }

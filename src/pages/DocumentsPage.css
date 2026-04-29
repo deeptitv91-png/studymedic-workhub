@@ -1,0 +1,23 @@
+/* src/pages/DocumentsPage.css */
+.docs-layout { display: grid; grid-template-columns: 200px 1fr; gap: 18px; align-items: start; }
+
+.folder-panel { padding: 12px 10px; }
+.folder-label { font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--gray-400); padding: 0 7px; margin-bottom: 8px; }
+.folder-btn { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 8px 10px; border-radius: 6px; font-size: 12px; color: var(--gray-600); background: none; border: none; cursor: pointer; transition: background .1s; text-align: left; }
+.folder-btn:hover { background: var(--gray-100); }
+.folder-btn--active { background: var(--brand-light); color: var(--brand2); font-weight: 600; }
+.folder-count { font-size: 11px; background: var(--gray-100); color: var(--gray-500); padding: 1px 7px; border-radius: 10px; }
+.folder-btn--active .folder-count { background: rgba(14,107,168,0.12); color: var(--brand2); }
+
+.files-list { display: flex; flex-direction: column; gap: 8px; }
+.file-item { display: flex; align-items: center; gap: 14px; padding: 14px 16px; }
+.file-icon { font-size: 26px; flex-shrink: 0; }
+.file-info { flex: 1; min-width: 0; }
+.file-name { font-size: 14px; font-weight: 600; color: var(--gray-900); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.file-desc { font-size: 12px; color: var(--gray-500); margin-top: 1px; }
+.file-meta { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--gray-400); margin-top: 4px; flex-wrap: wrap; }
+.file-folder-tag { background: var(--gray-100); padding: 1px 7px; border-radius: 4px; color: var(--gray-600); }
+.file-actions { display: flex; gap: 7px; flex-shrink: 0; }
+
+.dropzone { border: 2px dashed var(--gray-200); border-radius: 8px; padding: 28px; text-align: center; cursor: pointer; font-size: 13px; color: var(--gray-500); transition: all .15s; }
+.dropzone:hover { border-color: var(--brand2); background: var(--brand-light); }
