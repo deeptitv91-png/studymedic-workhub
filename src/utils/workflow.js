@@ -21,7 +21,7 @@ import { ROLES, TASK_TYPES, ALLOCATOR_ROLES } from "./constants";
  */
 export function getAvailableActions(task, currentUser) {
   if (!task || !currentUser) return {};
-  const { stage, type, assignedTo, assignedBy } = task;
+  const { stage, type, assignedBy } = task;
   const { id, role } = currentUser;
 
   const actions = {

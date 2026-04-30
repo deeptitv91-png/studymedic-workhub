@@ -1,6 +1,6 @@
 // src/pages/MyTasksPage.js
 import React, { useState, useEffect } from "react";
-import { collection, query, onSnapshot, orderBy, where, or } from "firebase/firestore";
+import { collection, query, onSnapshot, orderBy } from "firebase/firestore";
 import { db } from "../firebase/config";
 import { useUser } from "../context/UserContext";
 import {
